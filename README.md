@@ -11,14 +11,14 @@ Nodes : 3, Edges :6
 Vertex properties:User (properties): Name, UID, TeamId, Grade, Achievements
 Chat Session (properties): SessionID, Number of Users, StartTime, EndTime, Open or Closed, ChatTitle, ActiveStatus (e.g Active, Inactive)
 ChatText: Alphabets, Numbers, words, paragraphs, Emoticons, lines, Special Charecters, UID, TimeStamp
-===============Edge Properties:
+- Edge Properties:
 Leaves: TimeStamp, Reason (e.g. network failure / quit the session), session id 
 Joins: TimeStamp, Session ID, ChatTitle
 Starts: TimeStamp, Session ID, ChatTitle
 Writes: TimeStamp, Session ID, ChatTitle, MessageLength
 Mentions: TimeStamp, Session ID, ChatTitle, Indication
 Contains
-=================
+-
 1.Which teams are having more conversations? A: Analysing the combination of Chat Session properties, Joins, Writes, Mentions, Starts properties of each Chat Title we can analyse whether the teams are having more conversations.
 E.g. Analyse the the graph community to determine which community have more connections between the users of each group.The more dense the community the more they chat.
 
